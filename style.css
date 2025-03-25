@@ -1,0 +1,475 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@keyframes pluse{
+  0%{
+    transform: scale(0.2);
+    opacity: 0;
+  }
+  100%{
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes dropin {
+  from{
+    transform: translateY(50);
+    opacity: 0;
+  }
+  to{
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadein {
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+
+@keyframes bounce {
+  0%{transform: translateY(0);}
+  40%{transform: translateY(-20px);}
+  60%{transform: translateY(-10px);}
+}
+*{margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    
+    .poppins-thin {
+    font-family: "Poppins", serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+  body {
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .poppins-extralight {
+    font-family: "Poppins", serif;
+    font-weight: 200;
+    font-style: normal;
+  }
+  
+  .poppins-light {
+    font-family: "Poppins", serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .poppins-regular {
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .poppins-medium {
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .poppins-semibold {
+    font-family: "Poppins", serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  .poppins-bold {
+    font-family: "Poppins", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .poppins-extrabold {
+    font-family: "Poppins", serif;
+    font-weight: 800;
+    font-style: normal;
+  }
+  
+  .poppins-black {
+    font-family: "Poppins", serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  .poppins-thin-italic {
+    font-family: "Poppins", serif;
+    font-weight: 100;
+    font-style: italic;
+  }
+  
+  .poppins-extralight-italic {
+    font-family: "Poppins", serif;
+    font-weight: 200;
+    font-style: italic;
+  }
+  
+  .poppins-light-italic {
+    font-family: "Poppins", serif;
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  .poppins-regular-italic {
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .poppins-medium-italic {
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    font-style: italic;
+  }
+  
+  .poppins-semibold-italic {
+    font-family: "Poppins", serif;
+    font-weight: 600;
+    font-style: italic;
+  }
+  
+  .poppins-bold-italic {
+    font-family: "Poppins", serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+  .poppins-extrabold-italic {
+    font-family: "Poppins", serif;
+    font-weight: 800;
+    font-style: italic;
+  }
+  
+  .poppins-black-italic {
+    font-family: "Poppins", serif;
+    font-weight: 900;
+    font-style: italic;
+  }
+}
+
+.video-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1; /* Send it behind content */
+  border-radius: 0px 0px 50px 50px ;
+}
+
+header{
+  background-color: rgb(214, 209, 209);
+  width: 100%;
+  position: fixed;
+  z-index: 900;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 200px;
+ }
+.logo{
+  transform: translateY(-50px);
+  text-decoration: none;
+  color: rgb(0, 0, 255);
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.8em;
+  animation: dropin 2s ease-in-out forwards;
+  opacity: 0;
+  
+}
+.navigition a{
+  display: inline-block;
+  color: rgb(7, 103, 182);
+  text-decoration: none;
+  font-size: 1.4em;
+  font-weight: 600;
+  padding-left: 30px;
+  transform: translateY(-50px);
+  opacity: 0;
+ 
+ 
+}
+.ser{
+  animation: dropin 2s ease-in-out forwards;
+}
+.pro{
+  animation: dropin 2.7s ease-in-out forwards;
+}
+.con{
+  animation: dropin 3s ease-in-out forwards;
+}
+.navigition a:hover
+{
+  color:rgb(0, 0, 255);
+  
+}
+
+
+
+section{
+  padding: 100px 200px;
+}
+.main{
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  border-radius: 50px;
+  /*background: url(Images//download\ \(1\).jfif)no-repeat;*/
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  
+}
+.text{
+  opacity: 0;
+  animation: forwards fadein 2s ease-in-out;
+}
+.main h2{
+  color: aliceblue;
+  font-size: 1.5em;
+  font-weight: 500;
+}
+.main h2 span{
+  display: inline;
+  margin-top: 10px;
+  color:rgb(6, 118, 138);
+  font-size: 3em;
+  font-weight: 600;
+}
+.main h3{
+  color: aliceblue;
+  font-size: 2.5em;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+.mainbottom{
+  color: aliceblue;
+  background-color: rgb(142, 142, 146);
+  text-decoration: none;
+  font-size: 1.5em;
+  font-weight: 800;
+  display: inline-block;
+  padding: 0.9375em 2.1875em;
+  letter-spacing: .5ex;
+  border-radius: 15px;
+  margin-bottom: 40px;
+  transition: .7s ease;
+}
+.mainbottom:hover{
+  color: aliceblue;
+  font-size: 1.7em;
+  transform: scale(1.1);
+ 
+  transition: 0.7 ease;
+}
+.social-icon{
+  color: white;
+  font-size: 3em;
+  padding-right: 30px;
+  pointer-events: none;
+}
+.xcircle-image{
+  width: 330px; 
+  height: 330px; 
+  border-radius: 50%; 
+  object-fit: cover;  
+  
+  display: block;
+  position: absolute;
+  /*transform: translateX(750px);*/
+  margin-left: 55%;
+  
+  transform-origin: center center;
+  animation: pluse 2s ease-in-out forwards;
+  box-shadow: 10px 10px 25px rgba(1 1 1 / 50%);
+}
+.circle-imaghoof{
+  width: 50px;
+  height: 40px;
+  background-color: black;
+  border-radius: 10px;
+  position: absolute;
+}
+.title{
+  display: flex;
+  justify-content: center;
+  color: blue;
+  font-size: 3.2em;
+  font-weight: 800;
+  margin-bottom: 30px;
+}
+
+.content{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.cards {
+  background-color: #fff;
+  width: 22.25em;
+  box-shadow: 0 5px 25px rgba(1 1 1 / 20%);
+  border-radius: 10px;
+  padding: 25px;
+  margin: 15px;
+  transition: 0.7s ease;
+}
+.card1 :hover{
+  transform: scale(1.1);
+}
+.card
+{
+  background-color: white;
+}
+.icon{
+  color: rgb(7, 103, 182);
+  font-size: 8em;
+  text-align: center;
+  transition: 0.7s ease;
+  pointer-events: none;
+}
+.information{
+  text-align: center;
+  pointer-events: none;
+}
+.information h3{
+  color: blue;
+  font-size: 1.2em;
+  font-weight: 700;
+  margin: 10px;
+}
+
+.Project{
+  background-color: #000016;
+  background-size: cover;
+
+
+  
+}
+
+.Project .content{
+  margin-top: 30px;
+}
+.project-card{
+  background-color: #fff;
+  border: 1px solid #fff;
+  min-height: 14em;
+  width: 23em;
+  overflow: hidden;
+  border-radius: 10px;
+  margin: 20px;
+  transition: 0.7s ease;
+}
+
+.project-card :hover .p video{
+  opacity: 0.2;
+}
+.p Video{
+  width: 100%;
+}
+.project-info{
+  padding: 1em;
+}
+
+.Contact .icon{
+     font-size: 4.5em;
+}
+
+.contact .information p{
+  font-size: 1.4em;
+}
+.end{
+  background-color: #000016;
+  color: #fff;
+  padding: 2em;
+  display: flex;
+  justify-content: space-between;
+}
+.end-title{
+  font-size: 1.3em;
+  font-weight: 600;
+}
+
+.end-title span{
+  color: #3a6cf3;
+  font-size: 1.5em;
+}
+
+.card_contact
+{
+  background-color: white;
+}
+
+.email
+{
+  justify-items: center;
+}
+
+.end a
+{
+  display: inline-block;
+  text-decoration: none;
+  font-size: 1.7em;
+  font-weight: 600;
+  letter-spacing: 2px;
+  padding-left: 10px
+}
+
+@media (max-width: 1025px)
+{
+  header{
+    padding: 10px 50px;
+  }
+
+  .xcircle-image
+  {
+    width: 500px; 
+    height: 500px; 
+    padding: 0px 0px;
+    margin: 100px 16.5%;
+    position: relative;
+    top: 100px 0px;
+    order: 1;
+  }
+  .main{
+    display: flex;
+    flex-direction: row;
+    padding: 0px;
+    justify-content: center;
+    margin-bottom: 200px;
+  }
+
+  .text{
+    text-align: center;
+    margin: 0px 50px;
+    font-size: 1.5em;
+    justify-content: center;
+  }
+
+  .cards{
+    width: 20em;
+  }
+
+  .card{
+    padding: 50px 75px;
+  }
+
+  .p{
+    
+  }
+  .l{
+    /*transform: translateY(-100px);*/
+  } 
+}
