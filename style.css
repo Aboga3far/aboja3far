@@ -209,7 +209,7 @@ header{
 .navigition a:hover
 {
   color:rgb(0, 0, 255);
-  
+  text-decoration: underline;
 }
 
 
@@ -371,6 +371,7 @@ section{
   border-radius: 10px;
   margin: 20px;
   transition: 0.7s ease;
+  padding: 100px 0px 0px 0px;
 }
 
 .project-card :hover .p video{
@@ -449,6 +450,7 @@ section{
     padding: 0px;
     justify-content: center;
     margin-bottom: 200px;
+    padding-bottom: 100px;
   }
 
   .text{
@@ -465,11 +467,9 @@ section{
   .card{
     padding: 50px 75px;
   }
+}
 
-  .p{
-    
-  }
-  .l{
-    /*transform: translateY(-100px);*/
-  } 
+.sui p
+{
+  text-align: center;
 }
